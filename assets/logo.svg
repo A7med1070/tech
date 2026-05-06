@@ -1,0 +1,45 @@
+<svg width="760" height="260" viewBox="0 0 760 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fresh air">
+  <defs>
+    <linearGradient id="markGradient" x1="72" y1="42" x2="296" y2="222" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#64F1FF"/>
+      <stop offset=".5" stop-color="#1FAAEF"/>
+      <stop offset="1" stop-color="#65D65E"/>
+    </linearGradient>
+    <linearGradient id="panelGradient" x1="34" y1="24" x2="720" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FDFF"/>
+      <stop offset=".52" stop-color="#ECF9FF"/>
+      <stop offset="1" stop-color="#DDF7F1"/>
+    </linearGradient>
+    <linearGradient id="textGradient" x1="342" y1="74" x2="690" y2="177" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#082B49"/>
+      <stop offset=".45" stop-color="#0C6FB7"/>
+      <stop offset="1" stop-color="#118D79"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="760" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#00314F" flood-opacity=".18"/>
+    </filter>
+    <filter id="markShadow" x="37" y="18" width="270" height="224" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1FAAEF" flood-opacity=".22"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <rect x="26" y="24" width="708" height="212" rx="40" fill="url(#panelGradient)" stroke="#B7EAF4" stroke-width="2"/>
+    <rect x="38" y="36" width="684" height="188" rx="30" fill="white" fill-opacity=".42"/>
+  </g>
+
+  <g filter="url(#markShadow)">
+    <path d="M166 49c51 0 92 41 92 92 0 27-12 52-31 69" stroke="url(#markGradient)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M104 210a92 92 0 0 1 33-158" stroke="url(#markGradient)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M74 124c30-30 69-31 104-2 24 20 48 26 75 8 15-10 32-18 58-13-27 35-62 52-97 40-28-10-46-36-74-35-24 1-44 9-66 2Z" fill="url(#markGradient)"/>
+    <path d="M78 161c34-29 72-28 107 1 24 20 49 25 77 7 15-10 31-16 55-10-28 31-61 46-96 35-28-9-48-34-76-33-25 1-46 8-67 0Z" fill="url(#markGradient)" opacity=".86"/>
+    <path d="M118 94h96M166 55v96M132 69l68 68M200 69l-68 68" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity=".94"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif">
+    <text x="342" y="123" font-size="66" font-weight="900" fill="url(#textGradient)">Fresh air</text>
+    <text x="345" y="166" font-size="27" font-weight="800" fill="#1F748D">Used AC sales, installation and maintenance</text>
+    <path d="M345 190h244" stroke="#65D65E" stroke-width="6" stroke-linecap="round"/>
+    <path d="M608 190h54" stroke="#27BDF1" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
