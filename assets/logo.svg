@@ -1,45 +1,48 @@
-<svg width="760" height="260" viewBox="0 0 760 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fresh air">
+<svg width="430" height="124" viewBox="0 0 430 124" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="فريش إير للمكيفات المستعملة بالرياض">
   <defs>
-    <linearGradient id="markGradient" x1="72" y1="42" x2="296" y2="222" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#64F1FF"/>
-      <stop offset=".5" stop-color="#1FAAEF"/>
-      <stop offset="1" stop-color="#65D65E"/>
+    <linearGradient id="faMark" x1="18" y1="14" x2="122" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#84F8FF"/>
+      <stop offset=".46" stop-color="#20BDEB"/>
+      <stop offset="1" stop-color="#94EA46"/>
     </linearGradient>
-    <linearGradient id="panelGradient" x1="34" y1="24" x2="720" y2="236" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F8FDFF"/>
-      <stop offset=".52" stop-color="#ECF9FF"/>
-      <stop offset="1" stop-color="#DDF7F1"/>
+    <linearGradient id="faWind" x1="18" y1="30" x2="124" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8FFFF"/>
+      <stop offset=".55" stop-color="#66ECFF"/>
+      <stop offset="1" stop-color="#79F2C3"/>
     </linearGradient>
-    <linearGradient id="textGradient" x1="342" y1="74" x2="690" y2="177" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#082B49"/>
-      <stop offset=".45" stop-color="#0C6FB7"/>
-      <stop offset="1" stop-color="#118D79"/>
+    <linearGradient id="faText" x1="148" y1="18" x2="410" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".58" stop-color="#EAFDFF"/>
+      <stop offset="1" stop-color="#9AF044"/>
     </linearGradient>
-    <filter id="softShadow" x="0" y="0" width="760" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#00314F" flood-opacity=".18"/>
+    <filter id="faGlow" x="-10" y="-10" width="158" height="144" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="11" flood-color="#21D8FF" flood-opacity=".32"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#8EE23F" flood-opacity=".22"/>
     </filter>
-    <filter id="markShadow" x="37" y="18" width="270" height="224" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1FAAEF" flood-opacity=".22"/>
+    <filter id="faTextGlow" x="120" y="0" width="310" height="124" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.1" flood-color="#001219" flood-opacity=".82"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#21D8FF" flood-opacity=".14"/>
     </filter>
+    <style>
+      .wordmark{font-family:"Tajawal","Cairo","Segoe UI",Arial,sans-serif;font-weight:900;letter-spacing:0}
+      .tagline{font-family:"Tajawal","Cairo","Segoe UI",Arial,sans-serif;font-weight:800;letter-spacing:0}
+      .enline{font-family:"Segoe UI",Arial,sans-serif;font-weight:900;letter-spacing:2px}
+    </style>
   </defs>
-
-  <g filter="url(#softShadow)">
-    <rect x="26" y="24" width="708" height="212" rx="40" fill="url(#panelGradient)" stroke="#B7EAF4" stroke-width="2"/>
-    <rect x="38" y="36" width="684" height="188" rx="30" fill="white" fill-opacity=".42"/>
+  <g filter="url(#faGlow)">
+    <path d="M70 15c29.8 0 54 24.2 54 54 0 13.4-4.9 25.8-13.1 35.3" stroke="url(#faMark)" stroke-width="9.5" stroke-linecap="round"/>
+    <path d="M32.7 104.3A54 54 0 0 1 70 15" stroke="url(#faMark)" stroke-width="9.5" stroke-linecap="round"/>
+    <path d="M22 52c17.7-17.1 39.9-19.1 62.9-3.1 16.1 11.2 32.7 13.2 50.4 1.8-13.2 22.5-37 30.7-60.5 18.8C57.1 60.5 43.6 50.4 22 52Z" fill="url(#faWind)" opacity=".98"/>
+    <path d="M17 73.8c20.2-14.5 42.3-15.1 64.4 0 17.1 11.7 33.9 12.5 52.5.9-15.2 21.6-39.8 29.3-63.6 17C51.7 82 39.1 72.2 17 73.8Z" fill="url(#faWind)" opacity=".78"/>
+    <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#082437" stroke-width="4.4" stroke-linecap="round" opacity=".58"/>
+    <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#F8FFFF" stroke-width="2.45" stroke-linecap="round" opacity=".9"/>
+    <circle cx="118" cy="29" r="3.5" fill="#8EE23F"/>
+    <circle cx="132" cy="39" r="2.5" fill="#84F8FF"/>
   </g>
-
-  <g filter="url(#markShadow)">
-    <path d="M166 49c51 0 92 41 92 92 0 27-12 52-31 69" stroke="url(#markGradient)" stroke-width="15" stroke-linecap="round"/>
-    <path d="M104 210a92 92 0 0 1 33-158" stroke="url(#markGradient)" stroke-width="15" stroke-linecap="round"/>
-    <path d="M74 124c30-30 69-31 104-2 24 20 48 26 75 8 15-10 32-18 58-13-27 35-62 52-97 40-28-10-46-36-74-35-24 1-44 9-66 2Z" fill="url(#markGradient)"/>
-    <path d="M78 161c34-29 72-28 107 1 24 20 49 25 77 7 15-10 31-16 55-10-28 31-61 46-96 35-28-9-48-34-76-33-25 1-46 8-67 0Z" fill="url(#markGradient)" opacity=".86"/>
-    <path d="M118 94h96M166 55v96M132 69l68 68M200 69l-68 68" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity=".94"/>
-  </g>
-
-  <g font-family="Segoe UI, Arial, Helvetica, sans-serif">
-    <text x="342" y="123" font-size="66" font-weight="900" fill="url(#textGradient)">Fresh air</text>
-    <text x="345" y="166" font-size="27" font-weight="800" fill="#1F748D">Used AC sales, installation and maintenance</text>
-    <path d="M345 190h244" stroke="#65D65E" stroke-width="6" stroke-linecap="round"/>
-    <path d="M608 190h54" stroke="#27BDF1" stroke-width="6" stroke-linecap="round"/>
+  <g filter="url(#faTextGlow)">
+    <text class="wordmark" x="408" y="52" direction="rtl" text-anchor="end" font-size="44" fill="url(#faText)">فريش إير</text>
+    <text class="tagline" x="408" y="82" direction="rtl" text-anchor="end" font-size="16" fill="#86F3FF">للمكيفات المستعملة بالرياض</text>
+    <path d="M214 98h98" stroke="#99E644" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M324 98h54" stroke="#2FE3F5" stroke-width="3.5" stroke-linecap="round"/>
   </g>
 </svg>

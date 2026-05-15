@@ -13,7 +13,7 @@ document.querySelectorAll(".footer").forEach((footer) => {
   footer.innerHTML = `
     <div class="container footer-grid">
       <div>
-        <img src="assets/logo.svg" alt="Fresh air" style="width:190px">
+        ${typeof freshAirLogo === "function" ? freshAirLogo("footer-logo") : '<img src="assets/logo.svg" alt="Fresh air" class="footer-logo-fallback">'}
         <p>Fresh air تقدم خدمات شراء وبيع وتركيب وصيانة التكييفات المستعملة بالرياض بجودة عالية وسرعة استجابة.</p>
       </div>
       <div>

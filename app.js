@@ -24,13 +24,99 @@ const iconPaths = {
 
 const svgIcon = (name) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${iconPaths[name] || iconPaths.star}</svg>`;
 
+function freshAirLogo(className = "brand-logo") {
+  const uid = `fa-${className.replace(/[^a-z0-9]/gi, "") || "logo"}`;
+  return `
+    <svg class="${className}" viewBox="0 0 430 124" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="فريش إير للمكيفات المستعملة بالرياض">
+      <defs>
+        <linearGradient id="${uid}-mark" x1="18" y1="14" x2="122" y2="108" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#84F8FF"/>
+          <stop offset=".46" stop-color="#20BDEB"/>
+          <stop offset="1" stop-color="#94EA46"/>
+        </linearGradient>
+        <linearGradient id="${uid}-wind" x1="18" y1="30" x2="124" y2="78" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#E8FFFF"/>
+          <stop offset=".55" stop-color="#66ECFF"/>
+          <stop offset="1" stop-color="#79F2C3"/>
+        </linearGradient>
+        <linearGradient id="${uid}-shine" x1="148" y1="18" x2="410" y2="104" gradientUnits="userSpaceOnUse">
+          <stop stop-color="var(--logo-text)"/>
+          <stop offset=".5" stop-color="var(--logo-text)"/>
+          <stop offset="1" stop-color="var(--logo-accent)"/>
+        </linearGradient>
+        <filter id="${uid}-glow" x="-10" y="-10" width="158" height="144" color-interpolation-filters="sRGB">
+          <feDropShadow dx="0" dy="12" stdDeviation="11" flood-color="#21D8FF" flood-opacity=".32"/>
+          <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#8EE23F" flood-opacity=".22"/>
+        </filter>
+        <filter id="${uid}-textGlow" x="120" y="0" width="310" height="124" color-interpolation-filters="sRGB">
+          <feDropShadow dx="0" dy="2" stdDeviation="1.1" flood-color="var(--logo-shadow)" flood-opacity=".82"/>
+          <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#21D8FF" flood-opacity=".14"/>
+        </filter>
+      </defs>
+      <g class="logo-symbol" filter="url(#${uid}-glow)">
+        <path class="logo-orbit" d="M70 15c29.8 0 54 24.2 54 54 0 13.4-4.9 25.8-13.1 35.3" stroke="url(#${uid}-mark)" stroke-width="9.5" stroke-linecap="round"/>
+        <path class="logo-orbit" d="M32.7 104.3A54 54 0 0 1 70 15" stroke="url(#${uid}-mark)" stroke-width="9.5" stroke-linecap="round"/>
+        <path class="logo-windline" d="M22 52c17.7-17.1 39.9-19.1 62.9-3.1 16.1 11.2 32.7 13.2 50.4 1.8-13.2 22.5-37 30.7-60.5 18.8C57.1 60.5 43.6 50.4 22 52Z" fill="url(#${uid}-wind)" opacity=".98"/>
+        <path class="logo-windline" d="M17 73.8c20.2-14.5 42.3-15.1 64.4 0 17.1 11.7 33.9 12.5 52.5.9-15.2 21.6-39.8 29.3-63.6 17C51.7 82 39.1 72.2 17 73.8Z" fill="url(#${uid}-wind)" opacity=".78"/>
+        <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#082437" stroke-width="4.4" stroke-linecap="round" opacity=".58"/>
+        <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#F8FFFF" stroke-width="2.45" stroke-linecap="round" opacity=".9"/>
+        <circle class="logo-spark" cx="118" cy="29" r="3.5" fill="#8EE23F"/>
+        <circle class="logo-spark" cx="132" cy="39" r="2.5" fill="#84F8FF"/>
+      </g>
+      <g class="logo-copy" filter="url(#${uid}-textGlow)">
+        <text class="logo-wordmark logo-wordmark-ar" x="408" y="52" direction="rtl" text-anchor="end">فريش إير</text>
+        <text class="logo-tagline" x="408" y="82" direction="rtl" text-anchor="end">للمكيفات المستعملة بالرياض</text>
+        <path class="logo-rule logo-rule-green" d="M214 98h98"/>
+        <path class="logo-rule logo-rule-blue" d="M324 98h54"/>
+      </g>
+    </svg>
+  `;
+}
+
+function freshAirMark(className = "brand-mark-logo") {
+  const uid = `fa-${className.replace(/[^a-z0-9]/gi, "") || "mark"}`;
+  return `
+    <svg class="${className}" viewBox="0 0 144 124" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="${uid}-mark" x1="18" y1="14" x2="122" y2="108" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#84F8FF"/>
+          <stop offset=".46" stop-color="#20BDEB"/>
+          <stop offset="1" stop-color="#94EA46"/>
+        </linearGradient>
+        <linearGradient id="${uid}-wind" x1="18" y1="30" x2="124" y2="78" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#E8FFFF"/>
+          <stop offset=".55" stop-color="#66ECFF"/>
+          <stop offset="1" stop-color="#79F2C3"/>
+        </linearGradient>
+        <filter id="${uid}-glow" x="-10" y="-10" width="158" height="144" color-interpolation-filters="sRGB">
+          <feDropShadow dx="0" dy="12" stdDeviation="11" flood-color="#21D8FF" flood-opacity=".32"/>
+          <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#8EE23F" flood-opacity=".22"/>
+        </filter>
+      </defs>
+      <g class="logo-symbol" filter="url(#${uid}-glow)">
+        <path class="logo-orbit" d="M70 15c29.8 0 54 24.2 54 54 0 13.4-4.9 25.8-13.1 35.3" stroke="url(#${uid}-mark)" stroke-width="9.5" stroke-linecap="round"/>
+        <path class="logo-orbit" d="M32.7 104.3A54 54 0 0 1 70 15" stroke="url(#${uid}-mark)" stroke-width="9.5" stroke-linecap="round"/>
+        <path class="logo-windline" d="M22 52c17.7-17.1 39.9-19.1 62.9-3.1 16.1 11.2 32.7 13.2 50.4 1.8-13.2 22.5-37 30.7-60.5 18.8C57.1 60.5 43.6 50.4 22 52Z" fill="url(#${uid}-wind)" opacity=".98"/>
+        <path class="logo-windline" d="M17 73.8c20.2-14.5 42.3-15.1 64.4 0 17.1 11.7 33.9 12.5 52.5.9-15.2 21.6-39.8 29.3-63.6 17C51.7 82 39.1 72.2 17 73.8Z" fill="url(#${uid}-wind)" opacity=".78"/>
+        <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#082437" stroke-width="4.4" stroke-linecap="round" opacity=".58"/>
+        <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#F8FFFF" stroke-width="2.45" stroke-linecap="round" opacity=".9"/>
+        <circle class="logo-spark" cx="118" cy="29" r="3.5" fill="#8EE23F"/>
+        <circle class="logo-spark" cx="132" cy="39" r="2.5" fill="#84F8FF"/>
+      </g>
+    </svg>
+  `;
+}
+
 function initShell() {
   document.body.insertAdjacentHTML("afterbegin", `
     <div class="loader"><div class="loader-mark"><span>F</span></div></div>
     <div class="page-transition"></div>
     <header class="nav">
       <div class="nav-inner">
-        <a class="brand" href="index.html" aria-label="Fresh air"><img src="assets/logo.svg" alt="Fresh air"></a>
+        <a class="brand" href="index.html" aria-label="Fresh air">
+          <span class="brand-full">${freshAirLogo("brand-logo")}</span>
+          <span class="brand-compact">${freshAirMark("brand-mark-logo")}<span>فريش إير</span></span>
+        </a>
         <nav class="nav-links" aria-label="التنقل الرئيسي">
           ${pages.map(([href, label]) => `<a href="${href}">${label}</a>`).join("")}
         </nav>
@@ -68,9 +154,12 @@ function initShell() {
   onScroll();
   addEventListener("scroll", onScroll, { passive: true });
 
-  addEventListener("load", () => {
-    setTimeout(() => document.querySelector(".loader").classList.add("hide"), 450);
-  });
+  const hideLoader = () => setTimeout(() => document.querySelector(".loader")?.classList.add("hide"), 450);
+  if (document.readyState === "complete") {
+    hideLoader();
+  } else {
+    addEventListener("load", hideLoader, { once: true });
+  }
 
   document.querySelectorAll("a[href$='.html']").forEach((link) => {
     link.addEventListener("click", (event) => {
